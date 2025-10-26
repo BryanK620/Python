@@ -1,3 +1,4 @@
+#Comando de saída
 print('Olá, Mundo!')
 print(2+3)
 print('2+3')
@@ -109,4 +110,34 @@ print(tamanho)
 '''Comando de entrada
 input: comando, instrução, função
 '''
+idade = input ('Qual sua idade?')
+print (idade)
 
+nome = input ('Qual seu nome?')
+print(f'Olá {nome}, seja bem-vindo!')
+
+nota = float(input('Qual nota você recebeu na disciplina?'))
+print(f'Você tirou{nota}.')
+
+'''O input sempre retorna um dado do tipo string, se quiser um dado numérico, utilizamos a função int ou float antes do input
+int= número inteiro
+float=número com vírgula
+'''
+'''Casting de variáveis
+Ocorre quando existe a conversão de uma variável de um tipo de dado para outro, pode ser feito desde que essa conversão seja lógica e faça sentido no contexto do programa, como no último exemplo a cima, acrescentando o float antes da nota, para converter de string para número'''
+
+'''Fluxo de execução do programa e Teste de mesa'''
+
+x = 1
+y = 1
+z = x + y #z = 2
+
+x = x + 2 #x = 1+2 = 3
+y = y - 1 #y = 1-1 = 0
+z = x + y #z = 3+0 = 3
+
+x = y + 1 #x = 0+1 = 1
+y = x - 1 #y = 1-1 = 0
+z = x + y #z = 1+0 = 1
+
+print(z)
